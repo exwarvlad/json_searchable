@@ -1,0 +1,16 @@
+<h1>Finder</h1>
+
+<%= form_tag '/find_out', method: :get, remote: true do %>
+  <%= label_tag :Name, :Name %>
+  <%= text_field_tag :Name %>
+  <br>
+  <%= label_tag :Type, :Type %>
+  <%= text_field_tag :Type %>
+  <br>
+  <%= label_tag :Designed_by, 'Designed by' %>
+  <%= text_field_tag :Designed_by %>
+  <br>
+  <%= submit_tag 'Find out' %>
+<% end %>
+
+<div id="finder_result"></div>
