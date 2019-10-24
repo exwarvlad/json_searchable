@@ -43,7 +43,7 @@ class FinderService
 
   def has_match?(array, param)
     has_match = false
-    array.each { |item| has_match = true if item =~ /#{param}/  }
+    array.each { |item| break has_match = true if item =~ /#{param}/  }
     has_match
   end
 end
